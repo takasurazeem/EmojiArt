@@ -54,14 +54,22 @@
 		76176F0F202DAA2700AAE211 /* EmojiArt */ = {
 			isa = PBXGroup;
 			children = (
-				76176F10202DAA2700AAE211 /* AppDelegate.swift */,
+				76176F22202DAA3E00AAE211 /* Supporting Files */,
 				76176F12202DAA2700AAE211 /* ViewController.swift */,
 				76176F14202DAA2700AAE211 /* Main.storyboard */,
-				76176F17202DAA2700AAE211 /* Assets.xcassets */,
-				76176F19202DAA2700AAE211 /* LaunchScreen.storyboard */,
 				76176F1C202DAA2700AAE211 /* Info.plist */,
 			);
 			path = EmojiArt;
+			sourceTree = "<group>";
+		};
+		76176F22202DAA3E00AAE211 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76176F10202DAA2700AAE211 /* AppDelegate.swift */,
+				76176F17202DAA2700AAE211 /* Assets.xcassets */,
+				76176F19202DAA2700AAE211 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
