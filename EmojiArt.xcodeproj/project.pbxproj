@@ -50,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				76176F0F202DAA2700AAE211 /* EmojiArt */,
+				76593071202F134800CB7D6C /* README.md */,
 				76176F0E202DAA2700AAE211 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +75,6 @@
 				7659306F202F0E4800CB7D6C /* EmojiArtView+Gestures.swift */,
 				76176F22202DAA3E00AAE211 /* Supporting Files */,
 				76176F1C202DAA2700AAE211 /* Info.plist */,
-				76593071202F134800CB7D6C /* README.md */,
 			);
 			path = EmojiArt;
 			sourceTree = "<group>";
