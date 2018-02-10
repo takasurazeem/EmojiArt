@@ -8,7 +8,8 @@
 
 import UIKit
 
-class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScrollViewDelegate {
+class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+   
     
     @IBOutlet weak var dropZone: UIView! {
         didSet {
@@ -62,6 +63,31 @@ class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScr
     var emojis = "😀🎁✈️🎱🍎🐶🐝☕️🎼🚲♣️👨‍🎓✏️🌈🤡🎓👻☎️".map { String($0) }
 
     
+    @IBOutlet weak var emojiCollectionView: UICollectionView! {
+        didSet {
+            emojiCollectionView.dataSource = self
+            emojiCollectionView.delegate = self
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return emojis.count
+    }
+    
+    private var font: UIFont {
+        return UIFontMetrics(forTextStyle: .body).scaledFont(for: UIFont.preferredFont(forTextStyle: .body).scaled(by: 64.0))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = emojiCollectionView.dequeueReusableCell(withReuseIdentifier: "EmojiCell", for: indexPath)
+        
+        if let emojiCell = cell as? EmojiCollectionViewCell {
+            let text = NSAttributedString(string: emojis[indexPath.item], attributes: [.font : font])
+            emojiCell.label.attributedText = text
+        }
+        
+        return cell
+    }
     
     func dropInteraction(_ interaction: UIDropInteraction, canHandle session: UIDropSession) -> Bool {
         return session.canLoadObjects(ofClass: NSURL.self) && session.canLoadObjects(ofClass: UIImage.self)
