@@ -15,8 +15,8 @@
             <objects>
                 <splitViewController id="DRk-cS-f5j" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="8YV-Ir-aLs" kind="relationship" relationship="masterViewController" id="ANp-7f-vTL"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="kS0-XC-YtA"/>
+                        <segue destination="8YV-Ir-aLs" kind="relationship" relationship="masterViewController" id="4Wt-u3-mhW"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="fOO-j9-H5M"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2L-eo-kSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
