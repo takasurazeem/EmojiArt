@@ -34,17 +34,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NxE-ap-OsH">
                                 <rect key="frame" x="0.0" y="20" width="703.5" height="748"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cu5-tZ-wDW" customClass="EmojiArtView" customModule="EmojiArt" customModuleProvider="target">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Us-wW-33V">
                                         <rect key="frame" x="0.0" y="0.0" width="703.5" height="748"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="cu5-tZ-wDW" secondAttribute="bottom" id="4U8-bw-Cte"/>
-                                    <constraint firstItem="cu5-tZ-wDW" firstAttribute="leading" secondItem="NxE-ap-OsH" secondAttribute="leading" id="HAZ-Ie-liJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="cu5-tZ-wDW" secondAttribute="trailing" id="YJa-Db-O3U"/>
-                                    <constraint firstItem="cu5-tZ-wDW" firstAttribute="top" secondItem="NxE-ap-OsH" secondAttribute="top" id="zE5-6O-PLa"/>
+                                    <constraint firstItem="2Us-wW-33V" firstAttribute="top" secondItem="NxE-ap-OsH" secondAttribute="top" id="7N8-qC-bsu"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Us-wW-33V" secondAttribute="trailing" id="IfK-PQ-vSd"/>
+                                    <constraint firstItem="2Us-wW-33V" firstAttribute="leading" secondItem="NxE-ap-OsH" secondAttribute="leading" id="mkO-HQ-TOS"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Us-wW-33V" secondAttribute="bottom" id="xTL-i1-krL"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -59,7 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="dropZone" destination="NxE-ap-OsH" id="HRT-Yy-gUI"/>
-                        <outlet property="emojiArtView" destination="cu5-tZ-wDW" id="AQ8-gM-87b"/>
+                        <outlet property="scrollView" destination="2Us-wW-33V" id="0Ig-Y7-ruG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
