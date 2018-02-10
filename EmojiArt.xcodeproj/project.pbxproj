@@ -31,6 +31,7 @@
 		76176F27202DAFCC00AAE211 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		76176F29202DCCD300AAE211 /* EmojiArtDocumentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentTableViewController.swift; sourceTree = "<group>"; };
 		7659306F202F0E4800CB7D6C /* EmojiArtView+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmojiArtView+Gestures.swift"; sourceTree = "<group>"; };
+		76593071202F134800CB7D6C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		76ABFF6D202EEB1E00456FC3 /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +74,7 @@
 				7659306F202F0E4800CB7D6C /* EmojiArtView+Gestures.swift */,
 				76176F22202DAA3E00AAE211 /* Supporting Files */,
 				76176F1C202DAA2700AAE211 /* Info.plist */,
+				76593071202F134800CB7D6C /* README.md */,
 			);
 			path = EmojiArt;
 			sourceTree = "<group>";
