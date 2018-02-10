@@ -15,28 +15,27 @@
             <objects>
                 <splitViewController id="DRk-cS-f5j" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" id="hSz-cB-Flf"/>
-                        <segue destination="8hQ-Ve-psq" kind="relationship" relationship="masterViewController" id="BqP-w2-R0o"/>
+                        <segue destination="8YV-Ir-aLs" kind="relationship" relationship="masterViewController" id="ANp-7f-vTL"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="kS0-XC-YtA"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2L-eo-kSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-689" y="-173"/>
+            <point key="canvasLocation" x="-28" y="-313"/>
         </scene>
         <!--Emoji Art View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="EmojiArtViewController" customModule="EmojiArt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="703.5" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NxE-ap-OsH">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <rect key="frame" x="0.0" y="20" width="703.5" height="748"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cu5-tZ-wDW" customClass="EmojiArtView" customModule="EmojiArt" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="703.5" height="748"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
@@ -63,8 +62,9 @@
                         <outlet property="emojiArtView" destination="cu5-tZ-wDW" id="AQ8-gM-87b"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3" y="-173"/>
+            <point key="canvasLocation" x="684" y="-313"/>
         </scene>
         <!--Emoji Art Document Table View Controller-->
         <scene sceneID="hzu-9v-e24">
@@ -108,25 +108,25 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snd-7e-GyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3" y="498"/>
+            <point key="canvasLocation" x="723" y="494"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="MT7-c3-8t2">
+        <scene sceneID="bUb-hA-c2n">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8hQ-Ve-psq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8YV-Ir-aLs" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lok-72-cqq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FEd-Xl-e19">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="770-es-FI8" kind="relationship" relationship="rootViewController" id="FCX-0e-2jX"/>
+                        <segue destination="770-es-FI8" kind="relationship" relationship="rootViewController" id="SO5-pA-neu"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3oM-Uf-93O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHB-Q4-UFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-689" y="498"/>
+            <point key="canvasLocation" x="-21" y="477"/>
         </scene>
     </scenes>
 </document>
