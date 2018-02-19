@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -133,17 +134,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8UI-ce-uwd">
-                                                    <rect key="frame" x="27.5" y="25" width="25" height="30"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8UI-ce-uwd">
+                                                    <rect key="frame" x="10" y="1.5" width="60" height="77"/>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="64"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="8UI-ce-uwd" firstAttribute="centerY" secondItem="jz6-ip-CYu" secondAttribute="centerY" id="f0g-pl-njR"/>
-                                            <constraint firstItem="8UI-ce-uwd" firstAttribute="centerX" secondItem="jz6-ip-CYu" secondAttribute="centerX" id="qlt-sJ-khR"/>
+                                            <constraint firstItem="8UI-ce-uwd" firstAttribute="leading" secondItem="jz6-ip-CYu" secondAttribute="leadingMargin" constant="2" id="CZT-k0-tN4"/>
+                                            <constraint firstItem="8UI-ce-uwd" firstAttribute="centerY" secondItem="jz6-ip-CYu" secondAttribute="centerY" id="Ldn-JU-g5i"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="8UI-ce-uwd" secondAttribute="trailing" constant="2" id="PCJ-tJ-jV0"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="textField" destination="8UI-ce-uwd" id="5cv-Z8-x3u"/>
