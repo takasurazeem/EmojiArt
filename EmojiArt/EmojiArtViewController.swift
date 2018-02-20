@@ -80,7 +80,7 @@ class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScr
                                              create: true
             ).appendingPathComponent("Untitled.json") {
             if let jsonData = try? Data(contentsOf: url) {
-                emojiArt = EmojiArt(json: jsonData)
+                emojiArt = EmojiArt(json : jsonData)
             }
         }
     }
